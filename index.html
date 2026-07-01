@@ -2,27 +2,30 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Religionsspiel Karten</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="page-wrap">
+        <header>
+            <h1>Religionsspiel Karten</h1>
+            <p>Wähle einen Stapel, um eine Karte zu ziehen. Tippe auf die Karte, um die Antwort anzuzeigen.</p>
+        </header>
 
-<h1>Religionsspiel</h1>
+        <main>
+            <section id="stackGrid" class="stack-grid" aria-label="Kartenstapel"></section>
+        </main>
+    </div>
 
-<div id="stacks">
-    <button data-stack="1">Stapel 1</button>
-    <button data-stack="2">Stapel 2</button>
-    <button data-stack="3">Stapel 3</button>
-    <button data-stack="4">Stapel 4</button>
-    <button data-stack="5">Ereignis</button>
-    <button data-stack="6">Aktion</button>
-</div>
+    <div id="overlay" class="hidden" aria-hidden="true">
+        <div id="cardPopup" class="card-popup" role="dialog" aria-modal="true">
+            <div id="cardPhase" class="card-phase">Frage</div>
+            <div id="cardContent" class="card-content"></div>
+            <div id="cardHint" class="card-hint">Tippe erneut, um die Antwort zu sehen oder zu schließen.</div>
+        </div>
+    </div>
 
-<div id="card" class="hidden">
-    <div id="cardContent"></div>
-</div>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>

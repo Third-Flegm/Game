@@ -1,47 +1,124 @@
 {
-  "1": [
+  "background": "assets/background.jpg",
+  "stacks": [
     {
-      "question": "Nenne zwei christliche Feiertage.",
-      "answer": "Zum Beispiel Weihnachten und Ostern."
+      "id": "1",
+      "label": "Stapel 1",
+      "sprite": "assets/card.jpg",
+      "cards": [
+        {
+          "question": "Nenne zwei christliche Feiertage.",
+          "answer": "Zum Beispiel Weihnachten und Ostern.",
+          "options": [
+            "Weihnachten",
+            "Ostern",
+            "Silvester",
+            "Halloween"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Was bedeutet Glück?",
+          "answer": "Glück kann Zufriedenheit oder Freude bedeuten.",
+          "options": [
+            "Freude und Zufriedenheit",
+            "Nur Geld",
+            "Nur Erfolg",
+            "Nur Sport"
+          ],
+          "sprite": "assets/card.jpg"
+        }
+      ]
     },
     {
-      "question": "Was bedeutet Glück?",
-      "answer": "Glück kann Zufriedenheit oder Freude bedeuten."
-    }
-  ],
-
-  "2": [
+      "id": "2",
+      "label": "Stapel 2",
+      "sprite": "assets/card.jpg",
+      "cards": [
+        {
+          "question": "Warum feiern Christen Ostern?",
+          "answer": "Zur Erinnerung an die Auferstehung Jesu.",
+          "options": [
+            "Zur Erinnerung an die Auferstehung Jesu",
+            "Weil es im Frühling ist",
+            "Weil man Geschenke verteilt",
+            "Weil es ein Sommerfest ist"
+          ],
+          "sprite": "assets/card.jpg"
+        }
+      ]
+    },
     {
-      "question": "Warum feiern Christen Ostern?",
-      "answer": "Zur Erinnerung an die Auferstehung Jesu."
-    }
-  ],
-
-  "3": [
+      "id": "3",
+      "label": "Stapel 3",
+      "sprite": "assets/card.jpg",
+      "cards": [
+        {
+          "question": "Woran erkennt man eine Sekte?",
+          "answer": "Oft starke Kontrolle, Abschottung und Manipulation.",
+          "options": [
+            "Starke Kontrolle und Abschottung",
+            "Viele Feste und Musik",
+            "Freie Auswahl aller Regeln",
+            "Offene Diskussion"
+          ],
+          "sprite": "assets/card.jpg"
+        }
+      ]
+    },
     {
-      "question": "Woran erkennt man eine Sekte?",
-      "answer": "Oft starke Kontrolle, Abschottung und Manipulation."
-    }
-  ],
-
-  "4": [
+      "id": "4",
+      "label": "Stapel 4",
+      "sprite": "assets/card.jpg",
+      "cards": [
+        {
+          "question": "Welche Aufgaben hat die Kirche heute?",
+          "answer": "Gottesdienste, Hilfe für Menschen, Gemeinschaft.",
+          "options": [
+            "Gottesdienste und Hilfe für Menschen",
+            "Nur Musikveranstaltungen",
+            "Nur Ferienangebote",
+            "Nur Werbung"
+          ],
+          "sprite": "assets/card.jpg"
+        }
+      ]
+    },
     {
-      "question": "Welche Aufgaben hat die Kirche heute?",
-      "answer": "Gottesdienste, Hilfe für Menschen, Gemeinschaft."
-    }
-  ],
-
-  "5": [
+      "id": "5",
+      "label": "Ereignis",
+      "sprite": "assets/card.jpg",
+      "cards": [
+        {
+          "question": "Du hast jemandem geholfen. Gehe 2 Felder vor.",
+          "answer": "",
+          "options": [
+            "Weitergehen",
+            "Warten",
+            "Zurückgehen",
+            "Aussetzen"
+          ],
+          "sprite": "assets/card.jpg"
+        }
+      ]
+    },
     {
-      "question": "Du hast jemandem geholfen. Gehe 2 Felder vor.",
-      "answer": ""
-    }
-  ],
-
-  "6": [
-    {
-      "question": "Setze eine Runde aus.",
-      "answer": ""
+      "id": "6",
+      "label": "Aktion",
+      "sprite": "assets/card.jpg",
+      "cards": [
+        {
+          "question": "Setze eine Runde aus.",
+          "answer": "",
+          "options": [
+            "Aussetzen",
+            "Weitergehen",
+            "Doppelt ziehen",
+            "Neu starten"
+          ],
+          "sprite": "assets/card.jpg"
+        }
+      ]
     }
   ]
 }
