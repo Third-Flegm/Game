@@ -11,14 +11,17 @@ const cardContent = document.getElementById("cardContent");
 const cardPhase = document.getElementById("cardPhase");
 const cardHint = document.getElementById("cardHint");
 
-const stackTopics = [
-    ["Glaube", "Gebet", "Gemeinde", "Hoffnung", "Liebe"],
-    ["Vergebung", "Mitgefühl", "Werte", "Gewissen", "Gerechtigkeit"],
-    ["Kirche", "Gottesdienst", "Gemeinschaft", "Hilfe", "Miteinander"],
-    ["Weihnachten", "Ostern", "Fastenzeit", "Taufe", "Konfirmation"],
-    ["Freundschaft", "Hilfsaktion", "Zusammenarbeit", "Engagement", "Menschlichkeit"],
-    ["Aktion", "Chance", "Entscheidung", "Neuanfang", "Mut"]
-];
+const stackTopicsByType = {
+    frage: ["Glaube", "Gebet", "Gemeinde", "Hoffnung", "Liebe"],
+    aktion: ["Hilfe", "Mut", "Entscheidung", "Zusammenarbeit", "Verantwortung"],
+    ereignis: ["Glück", "Wende", "Chance", "Begegnung", "Veränderung"]
+};
+
+const defaultOptionsByType = {
+    frage: ["Weihnachten", "Ostern", "Kirche", "Caritas", "Glaube", "Hoffnung", "Liebe", "Gebet"],
+    aktion: ["Weitergehen", "Warten", "Zurückgehen", "Aussetzen", "Doppelt ziehen", "Noch einmal ziehen", "Neu starten", "Fragekarte ziehen"],
+    ereignis: ["Weitergehen", "Warten", "Zurückgehen", "Aussetzen", "Noch einmal ziehen", "Stille halten", "Fragekarte ziehen"]
+};
 
 const questionTemplates = [
     (topic) => `Was bedeutet ${topic} in der Religion?`,
@@ -36,14 +39,18 @@ const answerTemplates = [
     (topic) => `Es zeigt, dass ${topic} einen positiven Einfluss haben kann.`
 ];
 
-function createGeneratedCard(stackIndex, cardIndex) {
-    const topic = stackTopics[stackIndex]?.[cardIndex % stackTopics[stackIndex].length] || "Wert";
+function createGeneratedCard(stack, cardIndex) {
+    const stackType = String(stack?.type || "frage").toLowerCase();
+    const topics = stackTopicsByType[stackType] || stackTopicsByType.frage;
+    const options = defaultOptionsByType[stackType] || defaultOptionsByType.frage;
+    const topic = topics[cardIndex % topics.length] || "Wert";
     const questionTemplate = questionTemplates[cardIndex % questionTemplates.length];
     const answerTemplate = answerTemplates[cardIndex % answerTemplates.length];
 
     return {
         question: questionTemplate(topic),
         answer: answerTemplate(topic),
+        options: options.slice(0, 4),
         sprite: DEFAULT_CARD_SPRITE
     };
 }
@@ -58,18 +65,23 @@ function normalizeCardData(data) {
             const baseCards = Array.isArray(stack?.cards) ? stack.cards : [];
             const cards = [];
 
+            const stackType = String(stack?.type || "frage").toLowerCase();
+            const defaultOptions = defaultOptionsByType[stackType] || defaultOptionsByType.frage;
+
             baseCards.forEach((card, cardIndex) => {
+                const rawOptions = Array.isArray(card?.options) ? card.options : [];
+                const filteredOptions = rawOptions.filter((option) => defaultOptions.includes(option));
                 cards.push({
                     ...card,
                     question: card?.question || `Karte ${cardIndex + 1}`,
                     answer: card?.answer ?? "",
-                    options: Array.isArray(card?.options) ? card.options : [],
+                    options: filteredOptions.length ? filteredOptions : defaultOptions.slice(0, 4),
                     sprite: card?.sprite || stack?.sprite || DEFAULT_CARD_SPRITE
                 });
             });
 
             while (cards.length < 30) {
-                cards.push(createGeneratedCard(stackIndex, cards.length));
+                cards.push(createGeneratedCard(stack, cards.length));
             }
 
             return {

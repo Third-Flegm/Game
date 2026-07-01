@@ -3,7 +3,8 @@
   "stacks": [
     {
       "id": "1",
-      "label": "Stapel 1",
+      "type": "frage",
+      "label": "Stapel 1 - leicht",
       "sprite": "assets/card.jpg",
       "cards": [
         {
@@ -18,8 +19,8 @@
           "sprite": "assets/card.jpg"
         },
         {
-          "question": "Was bedeutet Glück?",
-          "answer": "Glück kann Zufriedenheit oder Freude bedeuten.",
+          "question": "Was bedeutet Glück für viele Menschen?",
+          "answer": "Glück bedeutet Freude, Sicherheit oder Zufriedenheit.",
           "options": [
             "Freude und Zufriedenheit",
             "Nur Geld",
@@ -27,12 +28,35 @@
             "Nur Sport"
           ],
           "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Was macht die Caritas?",
+          "answer": "Die Caritas hilft Menschen in Not.",
+          "options": [
+            "Sie hilft Menschen in Not",
+            "Sie verkauft nur Waren",
+            "Sie organisiert nur Feste",
+            "Sie macht nur Werbung"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Wie kann man in einer Kirche helfen?",
+          "answer": "Man kann mitarbeiten, helfen oder gemeinsam beten.",
+          "options": [
+            "Mitarbeiten und helfen",
+            "Nur zuschauen",
+            "Nur schlafen",
+            "Nur essen"
+          ],
+          "sprite": "assets/card.jpg"
         }
       ]
     },
     {
       "id": "2",
-      "label": "Stapel 2",
+      "type": "frage",
+      "label": "Stapel 2 - mittel",
       "sprite": "assets/card.jpg",
       "cards": [
         {
@@ -45,22 +69,89 @@
             "Weil es ein Sommerfest ist"
           ],
           "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Warum kann ein sehr strenger Glaubenskreis als Sekte wirken?",
+          "answer": "Weil er oft Kontrolle, Abschottung und Angst statt Freiheit fördert.",
+          "options": [
+            "Weil er Kontrolle und Abschottung fördert",
+            "Weil er viele Feste hat",
+            "Weil er Musik liebt",
+            "Weil er offen für alle ist"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Wie hängt Glück mit Hilfe für andere zusammen?",
+          "answer": "Weil Menschen oft Glück erfahren, wenn sie anderen helfen.",
+          "options": [
+            "Helfen macht das Leben schöner",
+            "Nur Geld bringt Glück",
+            "Glück ist nur Zufall",
+            "Glück braucht keine anderen"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Welche Bedeutung hat Weihnachten für viele Christen?",
+          "answer": "Weihnachten erinnert an die Geburt Jesu und an Hoffnung.",
+          "options": [
+            "Geburt Jesu und Hoffnung",
+            "Nur ein Winterfest",
+            "Nur ein Familienfest",
+            "Nur ein Essensfest"
+          ],
+          "sprite": "assets/card.jpg"
         }
       ]
     },
     {
       "id": "3",
-      "label": "Stapel 3",
+      "type": "frage",
+      "label": "Stapel 3 - schwer",
       "sprite": "assets/card.jpg",
       "cards": [
         {
-          "question": "Woran erkennt man eine Sekte?",
-          "answer": "Oft starke Kontrolle, Abschottung und Manipulation.",
+          "question": "Woran erkennt man eine Sekte im Unterschied zu einer Kirche?",
+          "answer": "Eine Sekte nutzt oft Druck, Kontrolle und Trennung, während eine Kirche offen und kritisch sein sollte.",
           "options": [
-            "Starke Kontrolle und Abschottung",
-            "Viele Feste und Musik",
-            "Freie Auswahl aller Regeln",
-            "Offene Diskussion"
+            "Druck und Kontrolle statt Freiheit",
+            "Mehr Musik und Essen",
+            "Nur mehr Feiertage",
+            "Nur mehr Regeln im Alltag"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Warum ist Caritas ein christlich geprägter Dienst?",
+          "answer": "Weil sie Nächstenliebe und Hilfe für Schwache sichtbar macht.",
+          "options": [
+            "Weil sie Nächstenliebe praktiziert",
+            "Weil sie nur Geld sammelt",
+            "Weil sie nur Kirchen baut",
+            "Weil sie nur für Erwachsene arbeitet"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Was ist der Unterschied zwischen Glück und bloßem Erfolg?",
+          "answer": "Glück ist nicht nur Erfolg, sondern auch innerer Frieden und Anteil an anderen.",
+          "options": [
+            "Glück ist mehr als nur Erfolg",
+            "Erfolg ist immer Glück",
+            "Glück ist nur Geld",
+            "Erfolg braucht keine Werte"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Warum sind christliche Feiertage für die Gemeinschaft wichtig?",
+          "answer": "Sie schaffen gemeinsame Erinnerungen, Hoffnung und Zusammenhalt.",
+          "options": [
+            "Sie fördern Gemeinschaft und Hoffnung",
+            "Sie bringen nur neue Aufgaben",
+            "Sie sind nur für Kinder",
+            "Sie sind nur für Musik"
           ],
           "sprite": "assets/card.jpg"
         }
@@ -68,17 +159,51 @@
     },
     {
       "id": "4",
-      "label": "Stapel 4",
+      "type": "frage",
+      "label": "Stapel 4 - sehr schwer",
       "sprite": "assets/card.jpg",
       "cards": [
         {
-          "question": "Welche Aufgaben hat die Kirche heute?",
-          "answer": "Gottesdienste, Hilfe für Menschen, Gemeinschaft.",
+          "question": "Wie kann man zwischen echter Gemeinschaft und kontrollierender Gemeinschaft unterscheiden?",
+          "answer": "Echte Gemeinschaft respektiert die Würde der Menschen, kontrollierende Gemeinschaft versucht sie zu lenken.",
           "options": [
-            "Gottesdienste und Hilfe für Menschen",
-            "Nur Musikveranstaltungen",
-            "Nur Ferienangebote",
-            "Nur Werbung"
+            "Respekt und Freiheit statt Kontrolle",
+            "Mehr Regeln und Angst",
+            "Nur gemeinsame Kleidung",
+            "Nur ein gemeinsamer Ort"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Warum kann die Kirche heute auch ein Ort der sozialen Hilfe sein?",
+          "answer": "Weil sie Menschen begleitet, stärkt und in schwierigen Zeiten unterstützt.",
+          "options": [
+            "Weil sie Menschen begleitet und unterstützt",
+            "Weil sie nur für Feste da ist",
+            "Weil sie nur Gebäude verwaltet",
+            "Weil sie nur Musik anbietet"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Welche Rolle spielt Nächstenliebe im Verhältnis von Glück und Caritas?",
+          "answer": "Sie macht Hilfe sichtbar und verbindet Glück mit Verantwortung.",
+          "options": [
+            "Sie verbindet Glück mit Verantwortung",
+            "Sie macht nur Geld sichtbar",
+            "Sie trennt Menschen",
+            "Sie bringt nur Streit"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Warum können christliche Feiertage trotz unterschiedlicher Traditionen zusammenhalten?",
+          "answer": "Weil sie Werte wie Hoffnung, Dankbarkeit und Gemeinschaft teilen.",
+          "options": [
+            "Weil sie gemeinsame Werte teilen",
+            "Weil sie nur einmal im Jahr sind",
+            "Weil sie nur Essen betreffen",
+            "Weil sie nur für Erwachsene sind"
           ],
           "sprite": "assets/card.jpg"
         }
@@ -86,15 +211,60 @@
     },
     {
       "id": "5",
-      "label": "Ereignis",
+      "type": "aktion",
+      "label": "Aktion",
       "sprite": "assets/card.jpg",
       "cards": [
         {
-          "question": "Du hast jemandem geholfen. Gehe 2 Felder vor.",
+          "question": "Du hilfst bei einer Caritas-Aktion im Ort. Gehe 2 Felder vor.",
           "answer": "",
           "options": [
             "Weitergehen",
             "Warten",
+            "Zurückgehen",
+            "Aussetzen"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Du besuchst einen Gottesdienst in der Kirche. Ziehe noch einmal.",
+          "answer": "",
+          "options": [
+            "Noch einmal ziehen",
+            "Aussetzen",
+            "Zurückgehen",
+            "Stille halten"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Du spendest für Menschen in Not. Gehe 1 Feld vor.",
+          "answer": "",
+          "options": [
+            "Weitergehen",
+            "Warten",
+            "Doppelt ziehen",
+            "Zurückgehen"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Du lernst etwas über einen christlichen Feiertag. Gehe 2 Felder vor.",
+          "answer": "",
+          "options": [
+            "Weitergehen",
+            "Aussetzen",
+            "Zurückgehen",
+            "Stopp"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Du erkennst, dass jemand in einer gefährlichen Gruppe gefangen ist. Bleibe stehen und ziehe eine Fragekarte.",
+          "answer": "",
+          "options": [
+            "Fragekarte ziehen",
+            "Weitergehen",
             "Zurückgehen",
             "Aussetzen"
           ],
@@ -104,17 +274,73 @@
     },
     {
       "id": "6",
-      "label": "Aktion",
+      "type": "ereignis",
+      "label": "Ereignis",
       "sprite": "assets/card.jpg",
       "cards": [
         {
-          "question": "Setze eine Runde aus.",
+          "question": "Bei einer Familienfeier wird Weihnachten gefeiert. Gehe 1 Feld vor.",
           "answer": "",
           "options": [
-            "Aussetzen",
             "Weitergehen",
-            "Doppelt ziehen",
-            "Neu starten"
+            "Warten",
+            "Zurückgehen",
+            "Aussetzen"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Ein Nachbar braucht Hilfe. Die Kirche organisiert Unterstützung. Gehe 2 Felder vor.",
+          "answer": "",
+          "options": [
+            "Weitergehen",
+            "Sitzen bleiben",
+            "Zurückgehen",
+            "Aussetzen"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Eine Gruppe versucht, dich zu beeinflussen. Bleibe stehen und überlege genau.",
+          "answer": "",
+          "options": [
+            "Nachdenken",
+            "Weitergehen",
+            "Zurückgehen",
+            "Aussetzen"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Du findest ein kleines Geschenk für einen Freund. Glück bringt dich 1 Feld weiter.",
+          "answer": "",
+          "options": [
+            "Weitergehen",
+            "Warten",
+            "Zurückgehen",
+            "Aussetzen"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Die Caritas sammelt Lebensmittel für Bedürftige. Gehe 2 Felder vor.",
+          "answer": "",
+          "options": [
+            "Weitergehen",
+            "Warten",
+            "Zurückgehen",
+            "Aussetzen"
+          ],
+          "sprite": "assets/card.jpg"
+        },
+        {
+          "question": "Beim Osterfest teilt sich die Gemeinde mit anderen. Ziehe noch einmal.",
+          "answer": "",
+          "options": [
+            "Noch einmal ziehen",
+            "Warten",
+            "Zurückgehen",
+            "Aussetzen"
           ],
           "sprite": "assets/card.jpg"
         }
